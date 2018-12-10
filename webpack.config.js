@@ -27,7 +27,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "!!ejs-compiled-loader!./views/layout.ejs"
+      fname: "das gibts doch gar nciht!",
+      template: "./views/layout.ejs"
     })
   ]
 };
