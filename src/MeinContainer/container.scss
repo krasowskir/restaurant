@@ -1,0 +1,13 @@
+$containerLenght: 50px;
+
+.meinContainer {
+  height: 2 * $containerLenght;
+  width: 100%;
+  background-color: aqua;
+}
+
+.meinItem {
+  height: 0.5 * $containerLenght;
+  width: 300px;
+  background-color: green;
+}
