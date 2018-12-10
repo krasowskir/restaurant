@@ -3,7 +3,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: path.resolve(__dirname, "src/App.js"),
+  entry: path.resolve(__dirname, "src/app.js"),
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist")
@@ -14,6 +14,10 @@ module.exports = {
         test: /\.js$/,
         use: "babel-loader",
         exclude: /node_modules/
+      },
+      {
+        test: /\.scss$/,
+        use: ["style-loader", "css-loader", "sass-loader"]
       }
     ]
   },
