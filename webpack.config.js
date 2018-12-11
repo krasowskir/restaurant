@@ -28,6 +28,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       fname: "das gibts doch gar nciht!",
+      logo: "Pastacasa",
       template: "./views/layout.ejs"
     })
   ]

@@ -1,5 +1,52 @@
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "./scss/typografie.scss";
+
+$mainFontSize: 0.75rem;
 
 body {
-  font: 1rem/1.5 var(--font-family-sans-serif);
+  font: 0.75rem/1rem var(--font-family-sans-serif);
+}
+
+.header .container-fluid {
+  background: $primary;
+  padding-top: 0.25rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.conatiner {
+  margin: 1.5rem 0;
+}
+
+.row {
+  flex-wrap: nowrap !important;
+}
+
+.main-nav {
+  line-height: 36px;
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    border-bottom: $border-width * 2 solid $gray-200;
+    transition: border-color 0.2s ease;
+  }
+}
+.btn-outline-primary {
+  font-size: $mainFontSize;
+  color: $blue !important;
+  border-color: $blue !important;
+  padding: 0 0.2rem !important;
+
+  &:hover {
+    color: $red !important;
+    border-color: $red !important;
+    transition: border-color, color 0.2s ease;
+  }
 }
