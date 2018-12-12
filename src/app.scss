@@ -2,16 +2,18 @@
 @import "./scss/typografie.scss";
 
 $mainFontSize: 0.75rem;
+$margin-right-left: 2rem;
 
 body {
   font: 0.75rem/1rem var(--font-family-sans-serif);
 }
 
 .header {
+  margin: 0 $margin-right-left;
   .container {
-    margin: 0 1rem;
     background: $primary;
     padding-top: 0.25rem;
+    max-width: 100% !important;
   }
 }
 
@@ -49,7 +51,7 @@ body {
 }
 
 .footer {
-  margin: 0 1rem;
+  margin: 0 $margin-right-left;
   background: $dark;
   text-align: center;
   color: $light;

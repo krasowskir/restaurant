@@ -1,10 +1,11 @@
 @import "node_modules/bootstrap/scss/bootstrap";
+@import "../app.scss";
 
 $containerLenght: 50px;
 
 .meinContainer {
   width: 100%;
-  padding: 0 1rem;
+  padding: 0 $margin-right-left;
 }
 
 .meinItem {
