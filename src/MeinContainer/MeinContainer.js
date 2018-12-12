@@ -9,7 +9,7 @@ export default class MeinComponent extends Component {
 
   render() {
     return (
-      <div className="meinContainer">
+      <div className="container">
         <img src={sky} alt="..." className="meinImage" />
       </div>
     );

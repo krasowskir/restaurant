@@ -8,16 +8,15 @@ body {
   font: 0.75rem/1rem var(--font-family-sans-serif);
 }
 
+.container {
+  padding: 0 0 !important;
+}
 .header {
-  margin: 0 $margin-right-left;
-  .container {
-    background: $primary;
-    padding-top: 0.25rem;
-    max-width: 100% !important;
-  }
+  background: $primary;
 }
 
 .row {
+  padding: 0.25rem 1rem;
   flex-wrap: nowrap !important;
 }
 
@@ -51,7 +50,7 @@ body {
 }
 
 .footer {
-  margin: 0 $margin-right-left;
+  margin: 0 auto;
   background: $dark;
   text-align: center;
   color: $light;

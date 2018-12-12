@@ -1,19 +1,14 @@
 @import "node_modules/bootstrap/scss/bootstrap";
-@import "../app.scss";
 
 $containerLenght: 50px;
 
-.meinContainer {
-  width: 100%;
-  padding: 0 $margin-right-left;
-}
-
-.meinItem {
-  height: 0.5 * $containerLenght;
-  width: 300px;
-  background-color: green;
-  font-family: "Gamja Flower", cursive;
-}
+// soll später durch tree shaking entfernt werden
+// .meinItem {
+//   height: 0.5 * $containerLenght;
+//   width: 300px;
+//   background-color: green;
+//   font-family: "Gamja Flower", cursive;
+// }
 .meinImage {
   width: 100%;
 }
