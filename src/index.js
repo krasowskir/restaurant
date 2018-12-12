@@ -3,7 +3,6 @@ import MeinContainer from "./MeinContainer/MeinContainer";
 
 const MyApp = props => (
   <div>
-    Hello Richard!
     <MeinContainer />
   </div>
 );

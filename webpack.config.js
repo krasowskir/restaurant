@@ -22,6 +22,10 @@ module.exports = {
       {
         test: /\.ejs$/,
         use: "ejs-compiled-loader"
+      },
+      {
+        test: /\.(jpg|jpeg|gif|svg|png)$/,
+        use: "url-loader"
       }
     ]
   },

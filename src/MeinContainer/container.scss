@@ -3,9 +3,8 @@
 $containerLenght: 50px;
 
 .meinContainer {
-  height: 2 * $containerLenght;
   width: 100%;
-  background-color: aqua;
+  padding: 0 1rem;
 }
 
 .meinItem {
@@ -13,4 +12,7 @@ $containerLenght: 50px;
   width: 300px;
   background-color: green;
   font-family: "Gamja Flower", cursive;
+}
+.meinImage {
+  width: 100%;
 }

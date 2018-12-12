@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import sky from "../../public/assets/sky.jpg";
 import "./container.scss";
 
 export default class MeinComponent extends Component {
@@ -9,7 +10,7 @@ export default class MeinComponent extends Component {
   render() {
     return (
       <div className="meinContainer">
-        <div className="meinItem">Das Item</div>
+        <img src={sky} alt="..." className="meinImage" />
       </div>
     );
   }
