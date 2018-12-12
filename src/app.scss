@@ -8,16 +8,11 @@ body {
 }
 
 .header {
-  .container-fluid {
+  .container {
+    margin: 0 1rem;
     background: $primary;
     padding-top: 0.25rem;
-    margin-left: 0;
-    margin-right: 0;
   }
-}
-
-.container {
-  margin: 1.5rem 0;
 }
 
 .row {
@@ -54,9 +49,10 @@ body {
 }
 
 .footer {
-  background: $primary;
+  margin: 0 1rem;
+  background: $dark;
   text-align: center;
-  color: $yiq-text-dark;
+  color: $light;
   padding: 1rem 0;
 
   h1 {
