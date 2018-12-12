@@ -7,14 +7,16 @@ body {
   font: 0.75rem/1rem var(--font-family-sans-serif);
 }
 
-.header .container-fluid {
-  background: $primary;
-  padding-top: 0.25rem;
-  margin-left: 0;
-  margin-right: 0;
+.header {
+  .container-fluid {
+    background: $primary;
+    padding-top: 0.25rem;
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-.conatiner {
+.container {
   margin: 1.5rem 0;
 }
 
@@ -48,5 +50,27 @@ body {
     color: $red !important;
     border-color: $red !important;
     transition: border-color, color 0.2s ease;
+  }
+}
+
+.footer {
+  background: $primary;
+  text-align: center;
+  color: $yiq-text-dark;
+  padding: 1rem 0;
+
+  h1 {
+    margin-bottom: 0;
+    font-size: 1.2rem;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+.social-media {
+  margin: 0.5rem 0;
+  a {
+    margin: 0.5rem 0.25rem;
   }
 }
