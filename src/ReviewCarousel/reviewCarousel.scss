@@ -1,4 +1,4 @@
-@import "../app.scss";
+@import "../scss/app.scss";
 
 .reviews {
   padding: 1rem 0.5rem;
@@ -19,18 +19,18 @@
     margin: 0;
   }
 
-  .carousel-control-prev{
+  .carousel-control-prev {
     opacity: 0.75;
     left: -50px;
   }
   .carousel-control-next {
     opacity: 0.75;
-    left: 320px ;
+    left: 320px;
   }
 
   .carousel-control-prev-icon {
     background-image: url(../../public/assets/links.svg);
-    
+
     width: 32px;
     height: 32px;
   }
@@ -43,7 +43,6 @@
   .carousel-indicators {
     li {
       background-color: $red;
-
     }
     .active {
       background-color: $dark;

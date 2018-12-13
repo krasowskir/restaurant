@@ -4,9 +4,12 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: path.resolve(__dirname, "src/app.js"),
+  entry: {
+    home: path.resolve(__dirname, "src/entrypoints/app.js"),
+    about: path.resolve(__dirname, "src/entrypoints/about.js")
+  },
   output: {
-    filename: "bundle.js",
+    filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist")
   },
   module: {
@@ -34,11 +37,21 @@ module.exports = {
     contentBase: "./dist"
   },
   devtool: "inline-source-map",
+  optimization: {
+    splitChunks: {
+      chunks: "all"
+    }
+  },
   plugins: [
     new CleanWebpackPlugin(["dist"]),
     new HtmlWebpackPlugin({
       logo: "Pastacasa",
+      filename: "main.html",
       template: "./views/layout.ejs"
+    }),
+    new HtmlWebpackPlugin({
+      filename: "about.html",
+      template: "./views/about.ejs"
     })
   ]
 };

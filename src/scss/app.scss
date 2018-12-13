@@ -1,5 +1,5 @@
-@import "node_modules/bootstrap/scss/bootstrap";
-@import "./scss/typografie.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./typografie.scss";
 
 $mainFontSize: 0.75rem;
 $margin-right-left: 2rem;
@@ -9,7 +9,7 @@ body {
 }
 
 .container {
-  padding:  0 0;
+  padding: 0 0;
   padding-bottom: 1rem;
 }
 .header {
