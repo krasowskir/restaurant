@@ -46,7 +46,7 @@ module.exports = {
     new CleanWebpackPlugin(["dist"]),
     new HtmlWebpackPlugin({
       logo: "Pastacasa",
-      filename: "main.html",
+      filename: "index.html",
       template: "./views/layout.ejs"
     }),
     new HtmlWebpackPlugin({
