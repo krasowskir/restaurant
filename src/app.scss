@@ -9,7 +9,8 @@ body {
 }
 
 .container {
-  padding: 0 0 !important;
+  padding:  0 0;
+  padding-bottom: 1rem;
 }
 .header {
   background: $primary;

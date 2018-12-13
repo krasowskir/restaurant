@@ -1,0 +1,52 @@
+@import "../app.scss";
+
+.reviews {
+  padding: 1rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__content {
+    width: 100%;
+  }
+
+  h2 {
+    font-size: $mainFontSize + 0.45rem;
+  }
+
+  .carousel-indicators {
+    bottom: 0;
+    margin: 0;
+  }
+
+  .carousel-control-prev{
+    opacity: 0.75;
+    left: -50px;
+  }
+  .carousel-control-next {
+    opacity: 0.75;
+    left: 320px ;
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url(../../public/assets/links.svg);
+    
+    width: 32px;
+    height: 32px;
+  }
+  .carousel-control-next-icon {
+    background-image: url(../../public/assets/rechts.svg);
+    width: 32px;
+    height: 32px;
+  }
+
+  .carousel-indicators {
+    li {
+      background-color: $red;
+
+    }
+    .active {
+      background-color: $dark;
+    }
+  }
+}
