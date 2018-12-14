@@ -4,10 +4,7 @@ const CleanWebpackPlugin = require("clean-webpack-plugin");
 
 module.exports = {
   mode: "development",
-  entry: {
-    home: path.resolve(__dirname, "src/entrypoints/app.js"),
-    about: path.resolve(__dirname, "src/entrypoints/about.js")
-  },
+  entry: path.resolve(__dirname, "app.js"),
   output: {
     filename: "[name].bundle.js",
     path: path.resolve(__dirname, "dist")
@@ -22,10 +19,6 @@ module.exports = {
       {
         test: /\.scss$/,
         use: ["style-loader", "css-loader", "sass-loader"]
-      },
-      {
-        test: /\.ejs$/,
-        use: "ejs-compiled-loader"
       },
       {
         test: /\.(jpg|jpeg|gif|svg|png)$/,
@@ -45,13 +38,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(["dist"]),
     new HtmlWebpackPlugin({
-      logo: "Pastacasa",
-      filename: "index.html",
-      template: "./views/layout.ejs"
-    }),
-    new HtmlWebpackPlugin({
-      filename: "about.html",
-      template: "./views/about.ejs"
+      template: "./index.html"
     })
   ]
 };

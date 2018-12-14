@@ -1,3 +1,92 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "./typografie.scss";
 
 $containerLenght: 50px;
+$mainFontSize: 0.75rem;
+$margin-right-left: 2rem;
+
+// font
+
+.large {
+  font-size: $mainFontSize * 2 !important;
+}
+
+body {
+  font: 0.75rem/1rem var(--font-family-sans-serif);
+
+  h1 {
+    margin-bottom: 0;
+    font-size: $mainFontSize * 4;
+  }
+  h2 {
+    font-weight: 900;
+  }
+  h3 {
+    font-weight: 700;
+    font-size: $mainFontSize * 1.2;
+  }
+}
+
+.container {
+  padding: 0 0;
+  padding-bottom: 1rem;
+}
+.header {
+  background: $primary;
+}
+
+.row {
+  padding: 0.25rem 1rem;
+  flex-wrap: nowrap !important;
+}
+
+.main-nav {
+  line-height: 36px;
+
+  ul {
+    margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  a:hover {
+    border-bottom: $border-width * 2 solid $gray-200;
+    transition: border-color 0.2s ease;
+  }
+}
+.btn-outline-primary {
+  font-size: $mainFontSize;
+  color: $blue !important;
+  border-color: $blue !important;
+  padding: 0 0.2rem !important;
+
+  &:hover {
+    color: $red !important;
+    border-color: $red !important;
+    transition: border-color, color 0.2s ease;
+  }
+}
+
+.footer {
+  margin: 0 auto;
+  background: $dark;
+  text-align: center;
+  color: $light;
+  padding: 1rem 0;
+
+  p {
+    margin-bottom: 0;
+  }
+}
+.social-media {
+  margin: 0.5rem 0;
+  a {
+    margin: 0.5rem 0.25rem;
+  }
+}
+
+.meinImage {
+  width: 100%;
+}

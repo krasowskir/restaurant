@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import sky from "../../public/assets/sky.jpg";
+import sky from "../../public/assets/img/sky.jpg";
 import About from "../About/About";
 import FoodTiles from "../FoodTiles/FoodTiles";
 import ReviewCarousel from "../ReviewCarousel/ReviewCarousel";

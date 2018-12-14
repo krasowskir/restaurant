@@ -3,3 +3,21 @@
 .container {
   background: $primary;
 }
+
+.about {
+  &__description {
+    padding: 1rem 2rem !important;
+  }
+
+  .social-media {
+    margin: $margin-right-left 0;
+    font-size: $mainFontSize * 1.5;
+  }
+
+  h4 {
+    line-height: 1.5;
+  }
+  h3 {
+    color: $red;
+  }
+}

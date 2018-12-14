@@ -1,4 +1,4 @@
-@import "../scss/app.scss";
+@import "./app.scss";
 
 .reviews {
   padding: 1rem 0.5rem;
@@ -29,13 +29,13 @@
   }
 
   .carousel-control-prev-icon {
-    background-image: url(../../public/assets/links.svg);
+    background-image: url(../../public/assets/img/links.svg);
 
     width: 32px;
     height: 32px;
   }
   .carousel-control-next-icon {
-    background-image: url(../../public/assets/rechts.svg);
+    background-image: url(../../public/assets/img/rechts.svg);
     width: 32px;
     height: 32px;
   }

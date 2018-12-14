@@ -1,8 +1,8 @@
 import React from "react";
-import pelmeni from "../../public/assets/pelmeni.jpg";
-import schaschlik from "../../public/assets/schaschlik.jpg";
-import schipovnik from "../../public/assets/schipovnik.jpg";
-import schuba from "../../public/assets/schuba.jpg";
+import pelmeni from "../../public/assets/img/pelmeni.jpg";
+import schaschlik from "../../public/assets/img/schaschlik.jpg";
+import schipovnik from "../../public/assets/img/schipovnik.jpg";
+import schuba from "../../public/assets/img/schuba.jpg";
 
 import "./foodTiles.scss";
 
