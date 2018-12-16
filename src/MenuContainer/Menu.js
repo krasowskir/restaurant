@@ -1,6 +1,4 @@
 import React, { Component } from "react";
-import ProductDetailModal from "../ProductDetailModal/ProductDetailModal";
-import schaschlik_detail from "../../public/assets/img/product_detail/schaschlik_detail.jpg";
 import products from "../Api/api";
 import ItemRow from "./Item";
 
@@ -32,7 +30,7 @@ export default class Menu extends Component {
             {/* <div className="row menu__row">
             <div className="col-3 offset-1 menu__cell">
               <h3>
-                <ProductDetailModal caption="Schaschlick" category="Apetithäppchen" img={schaschlik_detail} description="Item description" />
+                
               </h3>
               <p>Item description</p>
               <p className="price">4.99€</p>
