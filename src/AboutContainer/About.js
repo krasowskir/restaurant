@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import banner_about from "../../public/assets/img/about_restaurant_frisiert.jpg";
-import Dummy from "../Dummy/Dummy";
 
 import "./aboutContainer.scss";
 
