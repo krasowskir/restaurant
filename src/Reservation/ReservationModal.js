@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Modal, ModalHeader, ModalBody, ModalFooter, Button } from "reactstrap";
 
-export default class MyModal extends Component {
+export default class ReservationModal extends Component {
   constructor(props) {
     super(props);
     this.state = {

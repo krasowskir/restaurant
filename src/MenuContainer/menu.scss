@@ -1,0 +1,32 @@
+@import "../../public/assets/scss/app.scss";
+
+.menu {
+  background-color: white;
+  margin: 1rem 2rem;
+
+  h3 {
+    color: $red;
+  }
+
+  &__row {
+    justify-content: center;
+  }
+
+  &__cell {
+  }
+}
+
+.container {
+  padding-top: 1rem !important;
+}
+
+.page-header {
+  padding-bottom: 0.5rem;
+  margin: 1rem 0;
+  border-bottom: $border-width solid $gray-500;
+}
+
+.price {
+  font-weight: 700;
+  color: $red;
+}

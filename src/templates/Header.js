@@ -15,7 +15,7 @@ export default props => (
             </li>
             <li className="divider list-inline-item ">/</li>
             <li className="list-inline-item ">
-              <Link to="menu.html">Menu</Link>
+              <Link to="/menu">Menu</Link>
             </li>
             <li className="divider list-inline-item ">/</li>
             <li className="list-inline-item ">
@@ -23,7 +23,7 @@ export default props => (
             </li>
             <li className="divider list-inline-item ">/</li>
             <li className="list-inline-item ">
-              <Link to="contact.html">Contact</Link>
+              <Link to="/contact">Contact</Link>
             </li>
             <li className="list-inline-item" id="reservation-point" />
           </ul>
