@@ -2,7 +2,7 @@ import React from "react";
 
 const ItemRow = props => {
   const rows = props.group.items % 3;
-  const firstRow = props.group.items.slice(0, 3);
+  const firstRow = props.groupen.items.slice(0, 3);
   const secondRow = props.group.items.slice(3);
   let i = 0;
 

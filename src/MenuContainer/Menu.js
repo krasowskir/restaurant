@@ -9,7 +9,15 @@ import "./menu.scss";
 export default class Menu extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
+    this.state = {
+      err: null
+    };
+  }
+
+  componentDidCatch(err) {
+    this.setState({
+      err: "error " + err
+    });
   }
 
   render() {
@@ -17,8 +25,11 @@ export default class Menu extends Component {
 
     return (
       <div className="container ">
-        <div className="menu">
-          {/* <div className="row menu__row">
+        {this.state.err != null ? (
+          <div>Error in ItemRow</div>
+        ) : (
+          <div className="menu">
+            {/* <div className="row menu__row">
             <div className="col-3 offset-1 menu__cell">
               <h3>
                 <ProductDetailModal caption="Schaschlick" category="Apetithäppchen" img={schaschlik_detail} description="Item description" />
@@ -28,10 +39,11 @@ export default class Menu extends Component {
             </div>
             
           </div> */}
-          {<ItemRow group={groups[0]} />}
-          {<ItemRow group={groups[1]} />}
-          {<ItemRow group={groups[2]} />}
-        </div>
+            {<ItemRow group={groups[0]} />}
+            {<ItemRow group={groups[1]} />}
+            {<ItemRow group={groups[2]} />}
+          </div>
+        )}
       </div>
     );
   }
