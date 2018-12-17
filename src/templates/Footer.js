@@ -5,7 +5,7 @@ export default props => (
   <div className="container footer">
     <div className="row">
       <div className="col-lg-12">
-        <h1>Kontakt</h1>
+        <h2>Kontakt</h2>
         <p>Königswinterer Str. 318 / 53227, Bonn</p>
         <p>Öffnungszeiten: 08:00 - 12:00</p>
         <div className="social-media">

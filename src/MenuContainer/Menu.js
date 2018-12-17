@@ -27,16 +27,6 @@ export default class Menu extends Component {
           <div>Error in ItemRow</div>
         ) : (
           <div className="menu">
-            {/* <div className="row menu__row">
-            <div className="col-3 offset-1 menu__cell">
-              <h3>
-                
-              </h3>
-              <p>Item description</p>
-              <p className="price">4.99€</p>
-            </div>
-            
-          </div> */}
             {<ItemRow group={groups[0]} />}
             {<ItemRow group={groups[1]} />}
             {<ItemRow group={groups[2]} />}

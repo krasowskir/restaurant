@@ -28,14 +28,14 @@ export default class ReservationModal extends Component {
           </ModalHeader>
           <ModalBody>
             <form>
-              <div class="form-group">
-                <label>Name</label> <input type="text" class="form-control" placeholder="Namen..." />
+              <div className="form-group">
+                <label>Name</label> <input type="text" className="form-control" placeholder="Namen..." />
               </div>
-              <div class="form-group">
-                <label>Datum</label> <input type="text" class="form-control" placeholder="Datum..." />
+              <div className="form-group">
+                <label>Datum</label> <input type="text" className="form-control" placeholder="Datum..." />
               </div>
-              <div class="form-group">
-                <label>Gäste</label> <input type="text" class="form-control" placeholder="Anzahl an Gästen..." />
+              <div className="form-group">
+                <label>Gäste</label> <input type="text" className="form-control" placeholder="Anzahl an Gästen..." />
               </div>
             </form>
           </ModalBody>
