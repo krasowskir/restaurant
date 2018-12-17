@@ -27,9 +27,9 @@ export default class Menu extends Component {
           <div>Error in ItemRow</div>
         ) : (
           <div className="menu">
-            {<ItemRow group={groups[0]} />}
-            {<ItemRow group={groups[1]} />}
-            {<ItemRow group={groups[2]} />}
+            {groups.map(group => (
+              <ItemRow group={group} />
+            ))}
           </div>
         )}
       </div>
